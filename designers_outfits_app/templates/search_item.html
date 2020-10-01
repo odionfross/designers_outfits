@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<!-- meta areas-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--end of meta areas-->
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-datepicker3.css">
+    <link rel="icon" href="" style="">
+	<style type="text/css">
+		
+		 /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: gray;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
+.checked {
+  color: yellow;
+}
+	</style>
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	  <div class="collapse navbar-collapse">
+	   
+	        <a class="nav-link font-weight-bold text-center text-dark" href="#">Women</a>
+
+	        <a class="nav-link font-weight-bold text-center text-dark" href="#">Men</a>
+
+	        <a class="nav-link font-weight-bold text-center text-dark" href="#">Designer Brands</a>
+
+	        <a class="nav-link font-weight-bold text-center text-dark" href="#">Sales</a>
+
+	        <a class="nav-link font-weight-bold text-center text-dark" href="#">Blog</a>
+	      
+	  </div>
+	</nav>
+<div style="background-color: gray;">
+			<div class="jumbotron" style="height: 100px;width: 100%;">
+
+				 <ul class="nav">
+  <li class="nav-item">
+    <h3 class="">1000+ Pieces</h3>
+  </li>
+  <li class="nav-item justify-content-end">
+    <h3>Sort by</h3>
+  </li>
+
+   <li class="nav-item justify-content-end">
+    <form class="form-inline">
+					<select class="form-control" id="sel1">
+					    <option>Lowest to Highest</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					</select>
+				</form>
+  </li>
+  
+</ul> 	
+				
+			</div>
+</div>
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="#home">Category</a>
+  <a href="#news">Designer</a>
+  <a href="#contact">Price</a>
+  <a href="#about">Sale Discount</a>
+</div>
+<div class="container" style="margin-left: 16%; width: 100%;"> 
+	<div>
+		<div class="container w3-margin-top">
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJra1CR8JEu7Fq5SE3YVHBVORdJriHtlz0ow&usqp=CAU" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="8.png" style="height:255px;width: 90%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="7.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+                    </div>
+                </div>
+            </div>
+	</div>
+
+
+<br> 
+<div>
+	<div class="container w3-margin-top">
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+<br> 
+<div>
+	<div class="container w3-margin-top">
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="6.jpg" style="height:255px;width: 100%;">
+                    <div class="w3-container w3-text-black">
+                        <h6><b>Prada </b></h4>
+                        <h5>Pocket Linen Shirt</h5>
+                        <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+
+						<br>
+						<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      
+					      <th scope="col">Sale Price</th>
+					      <th></th>
+					      <th scope="col">$1500</th>
+					      
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      
+					      <td>List Price</td>
+					      <td></td>
+					      <td><s>$1800</s></td>
+					      
+					    </tr>
+					    <tr>
+					      
+					      <td>Savings </td>
+					      <td></td>
+					      <td>70% off</td>
+					      
+					    </tr>
+					    </tbody>
+					</table>
+						<a href="#" style="margin-top:200px; text-align: center;">See all prices(6 stores found)</a><br>
+                                
+                        <br>
+
+                       	<a class="btn btn-info btn-block mb-n12" style="border-radius: 10px;"
+                                        href="#">Buy at Macy's</a>
+
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+<div style="margin-top: 100px;"> 
+	<footer class="page-footer font-small " style="background-color: #D9DDDC; ">
+<div>
+	
+</div>
+		<div class="container">
+
+	    
+
+		    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+		    	<div class="col-md-8 col-12 mt-5">
+			        <p style="line-height: 1.7rem; font-weight: bold;">Subscribe to our newsletter</p>
+			        <p style="line-height: 1.7rem;">You'll recieve best deals straight in your inbox</p>
+
+			        <form class="input-group">
+			            <input type="text" class="form-control form-control-sm">
+			            <div class="input-group-append">
+			            	<button class="btn btn-lg btn btn-primary" type="submit"> Subscribe</button>
+			            </div>
+			        </form>
+		    	</div>
+		      
+		    </div>
+
+		    <hr class="rgba-white-light" style="margin-top: 50px;">
+
+		    <div class="row">
+		    	<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+		    		<p> 2020 Designer Outfits</p>
+		    	</div>
+
+		      <!-- Grid column -->
+
+			    <div class="col-md-1 mb-1" style="font-family: arial;">
+			        <h6 class=" font-weight-bold">
+			          <a class="text-dark" href="#!">Home</a>
+			        </h6>
+			    </div>
+			      <!-- Grid column -->
+
+			      <!-- Grid column -->
+			    <div class="col-md-1 mb-1">
+			        <h6 class="font-weight-bold">
+			          <a class="text-dark" href="#!">About</a>
+			        </h6>
+			    </div>
+			      <!-- Grid column -->
+
+			      <!-- Grid column -->
+			    <div class="col-md-1 mb-1">
+			        <h6 class=" font-weight-bold ">
+			          <a  class="text-dark" href="#!">Blog</a>
+			        </h6>
+			    </div>
+
+
+			    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+				          <!-- Facebook -->
+				    <a class="fb-ic">
+				        <i class="fab fa-facebook-f white-text mr-4"> </i>
+				    </a>
+				          <!-- Twitter -->
+				    <a class="tw-ic">
+				        <i class="fab fa-twitter white-text mr-4"> </i>
+				    </a>
+				          <!--Instagram-->
+				    <a class="ins-ic">
+				        <i class="fab fa-instagram white-text"> </i>
+				    </a>
+
+		        </div>
+
+		    </div>
+
+	   </div>
+
+	</footer>
+</div>
+	<!-- Footer -->
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="bootstrap1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mdb.min.js"></script>
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap-datepicker.min.js"></script>
+</html>
+
