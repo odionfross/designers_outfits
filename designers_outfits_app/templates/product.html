@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="{% static 'assets/img/favicons/favicon.ico' %}">
+    <!-- <link rel="icon" href="static/assets/img/favicons/favicon.ico"> -->
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{% static 'assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity/dist/flickity.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/highlightjs/styles/vs2015.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/simplebar/dist/simplebar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity-fade/flickity_fade.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/feather/feather.css' %}">
+
+    <!-- <link rel="stylesheet" href="static/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="static/assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="static/assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="static/assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="static/assets/libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="static/assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="static/assets/fonts/feather/feather.css"> -->
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css' %}">
+    <!-- <link rel="stylesheet" href="static/assets/css/theme.min.css"> -->
+
+    <title>Designers Outfits</title>
+
+</head>
+
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light @@classList">
+        <div class="container">
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarFashionTopCollapse">
+
+                <!-- Brand -->
+                <a class="navbar-brand mx-auto d-none d-lg-block" href=" static/overview.html">
+                    Designers Outfits
+                </a>
+
+            </div>
+            <!-- Social -->
+            <ul class="list-unstyled list-inline mb-7 mb-md-0 text-black-350">
+                <li class="list-inline-item">
+                    <a href="#!" class="text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="text-reset">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="text-reset">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <hr class="rgba-white-light" style="margin-bottom: 5px;">
+
+    <nav class="navbar navbar-expand-lg navbar-light @@classList">
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#!">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#!">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#!">Designer Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#!">Sales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#!">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <hr class="rgba-white-light" style="margin-bottom: 50px;">
+
+    <!-- PRODUCT -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-12"> -->
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+
+                        <!-- Card -->
+                        <div class="card mb-7">
+
+                            <!-- Item -->
+                            {% for image in images %}
+                            <img src="https://{{image}}" alt="..." class="card-img-top">
+                            {% endfor %}
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-5 col-sm-6 pl-sm-5" style="height: 400px;">
+                    <div class="card mb-7" style="margin-top: 15px;">
+                        <!-- Body -->
+                        <h3>{{brand}}</h3>
+                        <p>{{name}}</p>
+                        <div class="card-body px-0 pb-0 bg-white">
+                            <div class="rating font-size-xs text-warning mb-2" data-value="5">
+                                <div class="rating-item">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-item">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-item">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-item">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-item">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+
+                                    <!-- Title -->
+                                    <p class="d-block font-weight-bold text-body">
+                                        Sale Price
+                                    </p><br>
+                                </div>
+                                <div class="col-auto">
+
+                                    <!-- Price -->
+                                    <div class="font-size-sm font-weight-bold text-primary">
+                                        {{variants.0.price.current.text}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="d-block font-weight text-body">
+                                    List Price
+                                </p>
+                            </div>
+                            <div class="col-auto">
+
+                                <!-- Price -->
+                                <div class="font-size-xs font-weight-bold text-gray-350 text-decoration-line-through">
+                                    {{variants.0.price.previous.text}}
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a href="{{baseURL}}" class="btn btn-info btn-sm" style="border-radius: 10px;">Buy at {{brand}}</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="container" style="margin-bottom: 100px;">
+        <h4>Description</h4>
+        {{des}}
+        <br>
+        <h4>Size Info</h4>
+        {{info.sizeAndFit}}
+        <h4>Details and Care</h4>
+        {{info.careInfo}}
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class=" bg-cover @@classList" style="background-color: #D9DDDC; ">
+        <div class="py-5 border-bottom border-gray-500">
+            <div class="container">
+                <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+                    <div class="col-md-8 col-12 mt-5">
+                        <p style="line-height: 1.7rem; font-weight: bold; font-size:30px">Subscribe to our newsletter
+                        </p>
+                        <p style="line-height: 1.7rem;">You'll recieve best deals straight in your inbox</p>
+
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" style="border-radius: 5px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-lg btn btn-info btn-sm" type="submit"
+                                    style="border-radius: 10px;"> Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <hr class="rgba-white-light" style="margin-top: 50px;">
+
+                <div class="row">
+                    <div class="col-12 col-md-3">
+
+                        <!-- Copyright -->
+                        <div class="col-6 col-sm">
+                            <ul class="list-unstyled list-inline mb-7 mb-sm-0">
+                                <li>
+                                    <p class="mb-3 mb-md-0 font-size-xxs text-muted">
+                                        © 2020 Designers Outfits
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-sm">
+
+
+                        <!-- Links -->
+                        <ul class="list-unstyled list-inline mb-7 mb-sm-0">
+                            <li>
+                                <a class="heading-xxs mb-4 text-dark list-inline" href="#">Home</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-6 col-sm">
+                        <ul class="list-unstyled list-inline mb-7 mb-sm-0">
+                            <li>
+                                <a class="heading-xxs mb-4 text-dark list-inline" href="#">About us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm">
+                        <ul class="list-unstyled list-inline mb-7 mb-sm-0">
+                            <li>
+                                <a class="heading-xxs mb-4 text-dark list-inline" href="#">Blog</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <!-- Social -->
+                    <ul class="list-unstyled list-inline mb-7 mb-md-0 text-black-350">
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-reset">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-reset">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -345,9 +345,9 @@
                   <div class="col">
 
                     <!-- Title -->
-                    <a class="d-block font-weight-bold text-body" href="product.html">
+                    <p class="d-block font-weight-bold text-body">
                       Sale Price
-                    </a>
+                    </p>
 
                     <!-- Category -->
                     <!-- <a class="font-size-xs text-muted" href="shop.html">
@@ -393,7 +393,7 @@
 
                     </div>
                     <a href="#">See all prices(6 stores found)</a><br>
-                    <br><a class="btn btn-dark btn-md mb-n12" href="#">Buy at Macy's</a>
+                    <br><a class="btn btn-dark btn-md mb-n12" id="buy{{forloop.counter}}" href="">Buy</a>
                   </div>
                 </div>
               </div>
@@ -1613,7 +1613,7 @@
             category_id = woman_products[i].link.categoryId;
             // console.log(woman_products[i].content.title, " and ", category_id);
           }
-          console.log(woman_products[i].content.title);
+          // console.log(woman_products[i].content.title);
         }
 
         // API FOR PRODUCTS LIST
@@ -1637,6 +1637,7 @@
           var itemImages = []; 
           var itemPrevPrice = [];
           var itemCurPrice = [];
+          var itemID = [];
           for (let i = response.products.length-1; i > 0 && count < 8; i--){
             //Check if item is selling fast -- && response.products[i].price.previous.value != null
             if (response.products[i].isSellingFast == true){
@@ -1644,6 +1645,7 @@
               itemImages.push(response.products[count].imageUrl);
               itemPrevPrice.push(response.products[count].price.previous);
               itemCurPrice.push(response.products[count].price.current);
+              itemID.push(response.products[count].id);
               count++;
             }
           }
@@ -1652,7 +1654,7 @@
             console.log("Price",itemPrevPrice[i]);
           }
           for (let i = 1; i < 9; i++){
-            $(`#product${i}Img`).append(`<a class="d-block w-100" href="product.html"><img class="card-img-top" src="https://${itemImages[i-1]}" alt="..." /></a>`);
+            $(`#product${i}Img`).append(`<a class="d-block w-100" href="product/${itemID[i-1]}"><img class="card-img-top" src="https://${itemImages[i-1]}" alt="..." /></a>`);
             $(`#product${i}Header`).append(`<h3>${response.categoryName}</h3>`);
             $(`#product${i}Header`).append(`<p>${itemNames[i-1]}</p>`);
             $(`#product${i}SalePrice`).append(itemCurPrice[i-1].text);
@@ -1664,6 +1666,7 @@
               $(`#product${i}Price`).append(itemPrevPrice[i-1].text);
               $(`#product${i}SalePercent`).append(Math.trunc(itemCurPrice[i-1].value/itemPrevPrice[i-1].value*100),"%");
             } 
+            $(`#buy${i}`).attr("href",`product/${itemID[i-1]}`);
           }
         });
       });
